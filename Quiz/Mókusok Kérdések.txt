@@ -1,0 +1,25 @@
+Mókusok Kérdések:
+   Igaz & Hamisos kérdések:
+	1.-A mókusok csak nappal aktívak? ->A válasz: Hamis
+	2.-Mókusok csak fákról esznek? ->A válasz: Hamis
+	3.-A mókusok csak az erdőkben élnek. ->A válasz: Hamis
+	4.-A mókusok nem tudnak úszni. ->A válasz: Hamis
+	5.-A mókusok csak télen alszanak. ->A válasz: Hamis, mert a mókusok télen is aktívak, nem alszanak téli álmot.
+	6.-A mókusok egyedül élnek. ->A válasz: Igaz, bár néha csoportokban is megtalálhatóak.
+	7.-A mókusok képesek repülni. ->A válasz: Hamis, bár létezik repülő ernyős mókus.
+	8.-A mókusok csak dióféléket esznek. ->A válasz: Hamis, sok ételt fogyasztanak, többek közt magvakat és 
+rovarakat.
+	9.-A mókus csak egy fára építenek fészket. ->A válasz: Hamis, több fára is építenek.	
+	10.-A mókusok éjjel jobban látnak. ->A válasz: Hamis
+	11.-A mókusok képesek számolni. ->A válasz: Igaz
+	12.-A mókusok szaglása nagyon érzékeny, kifinomult. ->A válasz: Igaz, mert ezzel találnak élelmet, kommunikálnak egymással.
+	13.-Minden mókusfaj az emlősök csoportjába tartozik. ->A válasz: Igaz
+    Felelet választós kérdések.
+	14.-Mit eszik a mókus? A: mogyoró B: hús C: bogyók Helyes válasz: A
+	15.-Hol található a legtöbb mókusfaj? A: Ázsia B: Amerika C: Afganisztán Helyes válasz: B
+	16.-Milyen foga van a mókusnak? A: Metszőfog B: Tépőfog C: Örlőfog Helyes: A
+	17.-Hány ujj van egy mókus mancsán? A: 3 B: 6 C: 5 Helyes: 5
+	18.-Hány makkja van a mókusnak, ha 2 makk van a szájában és 1 a kezében? A: 5 B: 3 C: 4 Helyes: C
+	19.-Mikor a legaktívabb a mókus? A: Télen B: Nyáron C: Párzási időszakban Helyes: C
+	20.-Hogy hívják a fél lábú mókust? A: Kalóz mókus B: Krokodil mókus C: Mókus D: Mokus Helyes: C
+	+1-Mi a mókus legfőbb ellensége? A: A nyuszi B: A sas C: Héja Helyes: C
