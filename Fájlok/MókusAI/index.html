@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="Mókusok, MókusAi, Flashcard">
+    <meta name="author" content="Tóth Károly Attila, Bredács Gorán, Komlósi András">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="mokusai.css">
+    <title>MókusAi</title>
 </head>
 
 <body>
+    <header id="banner" class="container-fluid">
+        <h1>MókusAi</h1>
+    </header>
+
     <div class="main container-fluid gx-0">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="cegnev" href="#">MókusAi</a>
+                <a class="cegnev" href="#"> </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,39 +27,74 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="pontok" aria-current="page" href="#">Mi a Flashcard?</a>
+                            <a class="pontok" aria-current="page" href="#miaflashcard">Mi a Flashcard?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="pontok" href="#">Miért jó a Flashcard?</a>
+                            <a class="pontok" href="#miertjo">Miért jó a Flashcard?</a>
+                        </li>
                         </li>
                         <li class="nav-item">
-                            <a class="pontok" href="#">Képek & Videók</a>
+                        <a class="pontok" href="#quiz">Quiz rész</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="pontok" href="#tema">Téma ismertetése</a>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="header gx-0">
+        <div class="container-fluid">
+            <div class="row" id="elsosor">
+                <div class="col-lg-6 col-12">
+                    <h2 id="miaflashcard">Mik azok a flashcardok?</h2>
 
-        </div>
-        <div class="content gx-0">
-            <div class="text">
-                <h1>Mik azok a flashcardok?</h1>
-                <p>
-                A flashcardok olyan tanulókártyák, amikkel egy adott témát jobban meg tudunk ismerni, tanulni.
-                Gyakran használják idegen nyelvek tanulásához, szókincs bővítésére. A kártya egyik oldalán megjelenik egy definició és a kártya hátoldalán pedig ennek leírása, jelentése.
-                Ezeket a kártyákat több téma megismerésére is használják, mivel igen hasznos igaz/hamis kérdések vagy bármilyen, adott témával kapcsolatos kérdés megválaszolására, információ megismerésére és megtanulására.
-                </p>
+                    <p>A flashcardok olyan tanulókártyák, amikkel egy adott témát jobban meg tudunk ismerni, tanulni.
+                    Gyakran használják idegen nyelvek tanulásához, szókincs bővítésére. A kártya egyik oldalán megjelenik egy definició és a kártya hátoldalán pedig ennek leírása, jelentése.
+                    Ezeket a kártyákat több téma megismerésére is használják, mivel igen hasznos igaz/hamis kérdések vagy bármilyen, adott témával kapcsolatos kérdés megválaszolására, információ megismerésére és megtanulására.</p>
+                </div>
+                <div class="col-lg-6 col-12">
+
+                </div>
             </div>
-        </div>
-        <div class="content preview gx-0">
+            <div class="row" id="masodiksor">
+                <div class="col-lg-6 col-12">
+                    <h2>Miért jó a Flashcard?</h2>
+                    <p></p>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="row" id="harmadiksor">
+                <div class="col-lg-6 col-12">
+                    <h2>Téma leírása - Mókusok</h2>
+                    <p>A mi témánk a mókusok, a tanulókártyákkal róluk ismerhet meg az ember érdekes információkat, és bővitheti a tudását a mókusokról.
+                    A mókusokat rendszertanilag az állatok országába, ezen belül a gerinchúrosok törzsébe és az emlősök osztályába soroljuk.
+                    Ezek az aranyos négylábú emlősök a ták magvaiból, rovarokból, gyümölcsökből, sőt még az is előfordul, hogy kis madárfiókákkal is táplálkoznak. A mókusok nem alszanak téli álmot, télen is aktívak.
+                    Meglepően gyors állatok, amilyen kicsi, olyan fürge is. Mindemellett gyorsan fel tud szaladni a fákra a karmainak kszönhetően, gond nélkül mászik le a fáról. Jól alkalmazkodik a fán való élethez, jól navigál az erdőkben.</p>
+                    
+                    <ol>Érdekességek:
+                    <li>Sokan nem tudják, hogy az orrát a szagláson kívül kommunikálásra is használja.</li>
+                    <li>A metszőfogait oldalirányba is rudja mozgatni, magvak és diók feltörésére használja.</li>
+                    </ol>
+                </div>
+                <div class="col-lg-6 col-12">
+
+                </div>
+            </div>
+            <div class="row" id="quiz">
+                <div class="col-lg-6 col-12">
+                    <h2>Quiz</h2>
+                    <p></p>
+                </div>
+                <div class="col-lg-6 col-12">
+
+                </div>
+            </div>
 
         </div>
-    </div>
-    </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
+    </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
+
+
+https://www.magicpattern.design/tools/grid-background-pattern-generator
