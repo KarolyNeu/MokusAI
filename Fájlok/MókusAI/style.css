@@ -1,0 +1,75 @@
+.navbar-light {
+    background-color: rgb(64, 64, 64) !important;
+}
+
+body {
+    background-color: rgb(41, 41, 41) ! important;
+}
+
+.header {
+    width: 100vw;
+    height: 25vh;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 25% 60%, 20% 100%, 0% 100%);
+    background-color: rgb(21, 21, 21) !important;
+}
+
+.cegnev {
+    /*A navbaron belül a cégnevünk*/
+    font-weight: bolder;
+    text-transform: capitalize;
+    padding: 7px;
+    font-size: 175%;
+    color: darkturquoise;
+    font-family: Verdana;
+    font-style: italic;
+    text-shadow: 5px black;
+    text-decoration: none;
+}
+
+.pontok {
+    /*ez a Navbar pontjainak a stílusa */
+    font-weight: bold;
+    font-variant: small-caps;
+    color: darkcyan;
+    padding: 7px;
+    font-size: 115%;
+    text-decoration: none;
+}
+
+/*     border: 0.2rem solid #fff;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe; */
+
+
+
+.content{
+    clip-path: polygon(21% 10%, 26% 0, 31% 0, 26% 10%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+    background-color: rgb(21, 21, 21);
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(-7vh);
+    position: absolute;
+}
+
+.preview {
+    clip-path: polygon(61% 10%, 66% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+    background-color: rgb(21, 21, 21);
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(-7vh);
+    position: absolute;
+}
+
+.active{
+    background-color: black !important;
+    z-index: 1000;
+}
+
+.text {
+    margin-top: 10vh;
+}
