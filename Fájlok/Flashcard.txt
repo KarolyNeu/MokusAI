@@ -2,4 +2,6 @@ Mik azok a flashcardok?
 
 A flashcardok olyan tanulókártyák, amikkel egy adott témát jobban meg tudunk ismerni, tanulni.
 Gyakran használják idegen nyelvek tanulásához, szókincs bővítésére. A kártya egyik oldalán megjelenik egy definició és a kártya hátoldalán pedig ennek leírása, jelentése.
+
+Miért jó?
 Ezeket a kártyákat több téma megismerésére is használják, mivel igen hasznos igaz/hamis kérdések vagy bármilyen, adott témával kapcsolatos kérdés megválaszolására, információ megismerésére és megtanulására. Igen elterjedten használjék a mindennapi dolgok, tantárgyak begykorlására és tudatosítására. Mivel mi is sokszor használunk flashcardokat fogalmak megtanulására és új témakörök megismerésére, ezért úgy gondoltuk csinálunk egy ilyen ismeretterjesztő felületet.
