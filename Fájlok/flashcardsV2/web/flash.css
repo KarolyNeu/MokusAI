@@ -35,7 +35,6 @@
     margin: auto;
     padding: 30px;
     color: coral;
-    display: none;
 }
 #loginpage input{
     margin-left: 20px;
@@ -86,6 +85,7 @@
     border-radius: 12px;
     color: coral;
     border: none;
+    display: none;
 }
 
 #FLASHCARD .btn-group{

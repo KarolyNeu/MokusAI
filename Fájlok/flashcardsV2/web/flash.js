@@ -1,4 +1,15 @@
 var curans = 1
+
+function logOut() {
+    eel.logOutPY()
+}
+
+eel.expose(logOutJS)
+function logOutJS(){
+    document.getElementById("loginpage").style.display = "block"
+    document.getElementById("FLASHCARD").style.display = "none"
+}
+
 function login() {
     let usr = document.getElementById("loginname").value
     let pw = document.getElementById("loginpw").value
