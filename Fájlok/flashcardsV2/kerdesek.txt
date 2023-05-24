@@ -1,0 +1,13 @@
+1||A mókusok csak nappal aktívak?||0
+2||Mókusok csak fákról esznek?||0
+3||A mókusok csak az erdőkben élnek.||0
+4||A mókusok nem tudnak úszni.||0
+5||A mókusok csak télen alszanak.||0
+6||A mókusok egyedül élnek.||1
+7||A mókusok képesek repülni.||0
+8||A mókusok csak dióféléket esznek.||0
+9||A mókus csak egy fára építenek fészket.||0
+10||A mókusok éjjel jobban látnak.||0
+11||A mókusok képesek számolni.||1
+12||A mókusok szaglása nagyon érzékeny, kifinomult.||1
+13||Minden mókusfaj az emlősök csoportjába tartozik.||1
