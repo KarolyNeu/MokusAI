@@ -1,3 +1,4 @@
+
 import eel
 
 user = {}
@@ -67,6 +68,7 @@ def Login(usr, pw):
                 USERDATA[str(i+1)] = sor[i+2]
             print(USERDATA)
         print(f"Login successful: username: {usr}, password: {pw}")
+        eel.statUpdate(f"FlashCards - {user['USERNAME']}", str(helyes), str(helytelen))
     else:
         createUser(usr, pw)
 
@@ -84,18 +86,29 @@ def logOutPY():
 @eel.expose
 def question():
     global curquest
-    quest = kerdesek[curquest]
-    print(quest)
-    eel.cardBuilder(f"{quest['NUM']}. kérdés", "Title", quest['QUEST'], quest['ANS'])
     global curans
-    curans = quest['ANS']
-    curquest += 1
+    if curquest <= 12:
+        quest = kerdesek[curquest]
+        print(quest)
+        eel.cardBuilder(f"{quest['NUM']}. kérdés", "Title", quest['QUEST'], quest['ANS'])
+        curans = quest['ANS']
+        curquest += 1
+        print(curquest)
+    else:
+        curquest = 0
+        quest = kerdesek[curquest]
+        print(quest)
+        eel.cardBuilder(f"{quest['NUM']}. kérdés", "Title", quest['QUEST'], quest['ANS'])
+        curans = quest['ANS']
+        curquest += 1
+        print(curquest)
+
  
 @eel.expose
 def answer(ans):
     global helyes
     global helytelen
-
+    global user
     if ans == curans:
         helyes += 1
         print(helyes)
@@ -104,6 +117,7 @@ def answer(ans):
         helytelen += 1
         print(helyes)
         print(helytelen)
+    eel.statUpdate(f"FlashCards - {user['USERNAME']}", helyes, helytelen)
     question()
 
 

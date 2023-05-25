@@ -54,3 +54,10 @@ function show(){
     document.getElementById("menuicon").style.opacity = 1
     console.log("show")
 }
+
+eel.expose(statUpdate)
+function statUpdate(usr, cor, incor){
+    document.getElementById("offcanvasRightLabel").innerText(usr)
+    document.getElementById("correctnum").innerText(cor)
+    document.getElementById("incorrectnum").innerText(incor)
+}
