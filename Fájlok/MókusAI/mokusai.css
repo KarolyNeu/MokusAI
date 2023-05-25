@@ -1,14 +1,14 @@
 header{
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
-    width: 200px;
-    background-image: url(Images&Sources/mokusheader.jpg);
+    height: 550px;
+    background-position: center;
+    background-image: url(img/mokus-header.png);
     background-color: green;
 }
 h1{
     font-weight: bolder;
-    font-size: 150%;
+    font-size: 250%;
     color: darkgoldenrod;
     text-align: center;
     border-left-color: peru;
@@ -18,13 +18,19 @@ h1{
     text-transform: capitalize;
     font-family: Verdana;
     box-shadow: 5px black inset;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 h2{
-
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 125%;
+    font-family: Arial;
+    padding: 10px;
+    font-weight: bolder;
+    color: darkolivegreen;
 }
 img{
-
+    padding: 10px;
 }
 
 .row{
@@ -47,6 +53,22 @@ img{
     text-transform: uppercase;
     color: sienna;
 }
-.navbar{
+#elsosor{
+    background-color: brown;
+}
+#masodiksor{
+    background-color: peru;
+}
+#quizresz{
+    background-color: yellowgreen;
+}
+#harmadiksor{
+    background-color: olivedrab;
+}
+.belso{
+    background-color: blanchedalmond;
+    border-width: 5px;
+    border-color: chocolate;
+    border-style: double;
 
 }

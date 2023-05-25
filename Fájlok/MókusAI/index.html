@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Mókusok, MókusAi, Flashcard">
     <meta name="author" content="Tóth Károly Attila, Bredács Gorán, Komlósi András">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="mokusai.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>MókusAi</title>
 </head>
 
@@ -17,9 +17,9 @@
     </header>
 
     <div class="main container-fluid gx-0">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="cegnev" href="#"> </a>
+                <a class="cegnev img-fluid" href="#"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -42,59 +42,74 @@
                 </div>
             </div>
         </nav>
-        <div class="container-fluid">
-            <div class="row" id="elsosor">
+        </div>
+        <div class="container-fluid" id="elsosor">
+            <div class="container belso">
+            <div class="row">
+                <h2 class="m-3" id="miaflashcard">Mik azok a flashcardok?</h2>
                 <div class="col-lg-6 col-12">
-                    <h2 id="miaflashcard">Mik azok a flashcardok?</h2>
-
                     <p>A flashcardok olyan tanulókártyák, amikkel egy adott témát jobban meg tudunk ismerni, tanulni.
                     Gyakran használják idegen nyelvek tanulásához, szókincs bővítésére. A kártya egyik oldalán megjelenik egy definició és a kártya hátoldalán pedig ennek leírása, jelentése.
                     Ezeket a kártyákat több téma megismerésére is használják, mivel igen hasznos igaz/hamis kérdések vagy bármilyen, adott témával kapcsolatos kérdés megválaszolására, információ megismerésére és megtanulására.</p>
                 </div>
                 <div class="col-lg-6 col-12">
-
+                    <img class="img-fluid float-center m-3" src="img/Flashcard.PNG" alt="Flashcard" title="Flashcard">
                 </div>
             </div>
-            <div class="row" id="masodiksor">
+            </div>
+        </div>
+        <div class="container-fluid" id="masodiksor">
+            <div class="container belso">
+            <div class="row">
+                <h2 id="miertjo">Miért jó a Flashcard?</h2>
                 <div class="col-lg-6 col-12">
-                    <h2>Miért jó a Flashcard?</h2>
-                    <p></p>
-                </div>
+                    <img class="img-fluid img-thumbnail rounded m-3 float-center" src="img/joflashcard.jpg" alt="Flashcard" title="Flashcard">
+                    </div>
                 <div class="col-lg-6 col-12">
-                    <h2></h2>
+                    <p><em>Miért jó?</em>
+                        Ezeket a kártyákat <b>több</b> téma megismerésére is használják, mivel igen hasznos <strong>igaz/hamis</strong> kérdések vagy bármilyen, adott témával kapcsolatos kérdés megválaszolására, információ megismerésére és megtanulására. Igen elterjedten használjék a <b>mindennapi dolgok</b>, <i>tantárgyak</i> begykorlására és tudatosítására. Mivel mi is sokszor használunk flashcardokat fogalmak megtanulására és <sup>új</sup> témakörök megismerésére, ezért úgy gondoltuk csinálunk egy ilyen ismeretterjesztő felületet.</p>
                 </div>
             </div>
-            <div class="row" id="harmadiksor">
+        </div>
+        </div>
+        <div class="container-fluid" id="quizresz">
+            <div class="container belso">
+            <div class="row">
+                <h2 id="quiz">Quiz</h2>
                 <div class="col-lg-6 col-12">
-                    <h2>Téma leírása - Mókusok</h2>
+                    <img class="img-fluid float-center img-thumbnail" src="img/igaz_angolul.jpg" alt="Igaz">
+                </div>
+                <div class="col-lg-6 col-12">
+                    <img class="img-fluid float-center img-thumbnail" src="img/images.png" alt="Hamis">
+                </div>
+                <div class="col-lg-6 col-12">
+                    <a class="btn btn-success text-center float-center m-1" href="">Quiz kitöltése</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container-fluid" id="harmadiksor">
+            <div class="container belso">
+            <div class="row">
+                <h2 id="tema">Téma leírása - Mókusok</h2>
+                <div class="col-lg-6 col-12">
                     <p>A mi témánk a mókusok, a tanulókártyákkal róluk ismerhet meg az ember érdekes információkat, és bővitheti a tudását a mókusokról.
                     A mókusokat rendszertanilag az állatok országába, ezen belül a gerinchúrosok törzsébe és az emlősök osztályába soroljuk.
                     Ezek az aranyos négylábú emlősök a ták magvaiból, rovarokból, gyümölcsökből, sőt még az is előfordul, hogy kis madárfiókákkal is táplálkoznak. A mókusok nem alszanak téli álmot, télen is aktívak.
                     Meglepően gyors állatok, amilyen kicsi, olyan fürge is. Mindemellett gyorsan fel tud szaladni a fákra a karmainak kszönhetően, gond nélkül mászik le a fáról. Jól alkalmazkodik a fán való élethez, jól navigál az erdőkben.</p>
                     
-                    <ol>Érdekességek:
+                    <li><i><strong>Érdekességek:</strong></i></li><ol>
                     <li>Sokan nem tudják, hogy az orrát a szagláson kívül kommunikálásra is használja.</li>
                     <li>A metszőfogait oldalirányba is rudja mozgatni, magvak és diók feltörésére használja.</li>
                     </ol>
                 </div>
                 <div class="col-lg-6 col-12">
-
+                    <img class="img-fluid img-thumbnail img-rounded float-center m-3" src="img/mokus.jpg" alt="Flashcard" title="Flashcard">
                 </div>
             </div>
-            <div class="row" id="quiz">
-                <div class="col-lg-6 col-12">
-                    <h2>Quiz</h2>
-                    <p></p>
-                </div>
-                <div class="col-lg-6 col-12">
-
-                </div>
             </div>
-
         </div>
     </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
 
-
-https://www.magicpattern.design/tools/grid-background-pattern-generator
