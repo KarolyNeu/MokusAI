@@ -1,4 +1,4 @@
-
+import random
 import eel
 
 user = {}
@@ -34,7 +34,7 @@ def createUser(username, password):
         f.write(text)
     with open(f"userdata/{username}.txt", "a", encoding="UTF-8") as f:
         for i in range(len(kerdesek)+2):
-            f.write("0||")
+            f.write("1||")
 
 
     Login(username, password)
@@ -82,26 +82,30 @@ def logOutPY():
     eel.logOutJS()
 
 
+def weightedChoice():
+    global user
+    global USERDATA
+    global kerdesek
+    global quest
+    weight = []
+    for i in range(13):
+        weight.append(int(USERDATA[str(i+1)]))
+    print(weight)
+    choice = random.choices(kerdesek, weights=weight, k=1)
+    print(choice)
+    quest = choice[0]
+
 
 @eel.expose
 def question():
     global curquest
     global curans
-    if curquest <= 12:
-        quest = kerdesek[curquest]
-        print(quest)
-        eel.cardBuilder(f"{quest['NUM']}. kérdés", "Title", quest['QUEST'], quest['ANS'])
-        curans = quest['ANS']
-        curquest += 1
-        print(curquest)
-    else:
-        curquest = 0
-        quest = kerdesek[curquest]
-        print(quest)
-        eel.cardBuilder(f"{quest['NUM']}. kérdés", "Title", quest['QUEST'], quest['ANS'])
-        curans = quest['ANS']
-        curquest += 1
-        print(curquest)
+    weightedChoice()
+    print(quest)
+    eel.cardBuilder(f"{quest['NUM']}. kérdés", "Title", quest['QUEST'], quest['ANS'])
+    curans = quest['ANS']
+    curquest = quest['NUM']
+    print(curquest)
 
  
 @eel.expose
