@@ -14,16 +14,23 @@ h1{
     border-left-color: peru;
     border-left-width: 5px;
     border-left-style: dotted;
+    border-bottom-color: peru;
+    border-bottom-width: 5px;
+    border-bottom-style: dotted;
     padding: 15px;
     text-transform: capitalize;
     font-family: Verdana;
     box-shadow: 5px black inset;
     letter-spacing: 2px;
+    background-color: rgba(0,0,0,0.5);
+}
+.szinkod{
+    background-color: rgba(0,0,0,0.25);
 }
 h2{
     text-align: center;
     text-transform: capitalize;
-    font-size: 125%;
+    font-size: 175%;
     font-family: Arial;
     padding: 10px;
     font-weight: bolder;
