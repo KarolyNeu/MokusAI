@@ -12,11 +12,6 @@
 </head>
 
 <body>
-    <a class="menuicon btn" id="menuicon" data-bs-toggle="offcanvas" href="#navbar" data-bs-target="#offcanvasRight" role="button" aria-controls="Navbar">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </a>
 
     <div class="container-fluid" id="main">
         <div id="loginpage">
@@ -24,8 +19,6 @@
             <label for="loginname">Felhasználó:</label>
             <input type="text" id="loginname" name="loginname">
             <br>
-            <label for="loginpw">Jelszó:</label>
-            <input type="text" id="loginpw" name="loginpw">
             <button id="login" onclick="login()">Bejelentkezés</button>
         </div>
     </div>
@@ -33,9 +26,13 @@
     <div id="FLASHCARD" class="card text-center">
         <div class="card-header">
             <h1 id="num">1. kérdés</h1>
+            <button class="menuicon btn" id="menuicon" data-bs-toggle="offcanvas" href="#navbar" data-bs-target="#offcanvasRight" role="button" aria-controls="Navbar">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
         </div>
         <div class="card-body">
-            <h5 class="card-title" id="title">valami</h5>
             <p class="card-text" id="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque provident odio quibusdam esse numquam enim placeat possimus unde! Id dolorem ex suscipit officiis aspernatur quos consequatur exercitationem doloribus facere deserunt?.</p>
             <div class="btn-group" role="group" aria-label="Basic example">
                 <button type="button" class="btn btn-primary" id="igaz" onclick="answer(1)">Igaz</button>

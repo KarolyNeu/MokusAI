@@ -9,6 +9,7 @@ curans = 0
 helyes = 0
 helytelen = 0
 USERDATA = {}
+nthquest = 1
 with open("kerdesek.txt", "r", encoding="UTF-8") as f:
     sorok = f.readlines()
     for sor in sorok:
@@ -25,10 +26,10 @@ print(kerdesek)
 eel.init('web')
 
 
-def createUser(username, password):
+def createUser(username):
     global kerdesek
     with open("userdata/users.txt", "a", encoding="UTF-8") as f:
-        f.write(f"{username}||{password}\n")
+        f.write(f"{username}\n")
     with open(f"userdata/{username}.txt", "w", encoding="UTF-8") as f:
         text = ""
         f.write(text)
@@ -37,14 +38,19 @@ def createUser(username, password):
             f.write("1||")
 
 
-    Login(username, password)
+    Login(username)
 
 
 
 @eel.expose
-def Login(usr, pw):
+def Login(usr):
+    global nthquest
     global user
+    global USERDATA
+    global helyes
+    global helytelen
     global users
+    nthquest = 1
     with open("userdata/users.txt", "r", encoding="UTF-8") as f:
         sorok = f.readlines()
         for sor in sorok:
@@ -52,11 +58,9 @@ def Login(usr, pw):
             sor = sor.split("||")
             sv = {}
             sv["USERNAME"] = sor[0]
-            sv["PASSWORD"] = sor[1]
             users.append(sv)
             print(sv)
     user["USERNAME"] = usr
-    user["PASSWORD"] = pw
     print(user)
     if user in users:
         with open(f"userdata/{usr}.txt", "r", encoding="UTF-8") as f:
@@ -64,13 +68,18 @@ def Login(usr, pw):
             sor = sorok[0].split("||")
             USERDATA["HELYES"] = sor[0]
             USERDATA["HELYTELEN"] = sor[1]
+            helyes = int(sor[0])
+            helytelen = int(sor[1])
+
+
             for i in range(13):
                 USERDATA[str(i+1)] = sor[i+2]
             print(USERDATA)
-        print(f"Login successful: username: {usr}, password: {pw}")
-        eel.statUpdate(f"FlashCards - {user['USERNAME']}", str(helyes), str(helytelen))
+        print(f"Login successful: username: {usr}")
     else:
-        createUser(usr, pw)
+        createUser(usr)
+    question()
+    eel.stats(helyes,helytelen)
 
 
 @eel.expose
@@ -100,9 +109,10 @@ def weightedChoice():
 def question():
     global curquest
     global curans
+    global nthquest
     weightedChoice()
     print(quest)
-    eel.cardBuilder(f"{quest['NUM']}. kérdés", "Title", quest['QUEST'], quest['ANS'])
+    eel.cardBuilder(f"{nthquest}. kérdés", quest['QUEST'], quest['ANS'])
     curans = quest['ANS']
     curquest = quest['NUM']
     print(curquest)
@@ -110,9 +120,11 @@ def question():
  
 @eel.expose
 def answer(ans):
+    global nthquest
     global helyes
     global helytelen
     global user
+    nthquest += 1
     if ans == curans:
         helyes += 1
         print(helyes)
@@ -121,13 +133,11 @@ def answer(ans):
         helytelen += 1
         print(helyes)
         print(helytelen)
-    eel.statUpdate(f"FlashCards - {user['USERNAME']}", helyes, helytelen)
     question()
+    eel.stats(helyes,helytelen)
 
 
 
 
 
-
-eel.start('flash.html')
-question()
+eel.start('flash.html', mode=None)

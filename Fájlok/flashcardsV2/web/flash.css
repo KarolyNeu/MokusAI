@@ -36,6 +36,16 @@
     padding: 30px;
     color: coral;
 }
+
+@media (max-width: 1200px) {
+    #loginpage{
+        width: 80vw;
+    }
+    #loginpage button{
+        width: 20vw !important;
+    }
+}
+
 #loginpage input{
     margin-left: 20px;
     background-color: rgba(0, 0, 0, 0.137);
@@ -160,8 +170,15 @@
 
 .offcanvas{
     transition: all 0.5s !important;
+    width: 100vh !important;
 }
 
 .offcanvas-backdrop {
     transition: all 0.5s !important;
+}
+
+@media (min-width: 768px){
+    .offcanvas {
+        width: 25vw !important;
+    }
 }

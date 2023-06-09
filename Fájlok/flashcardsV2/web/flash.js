@@ -12,18 +12,15 @@ function logOutJS(){
 
 function login() {
     let usr = document.getElementById("loginname").value
-    let pw = document.getElementById("loginpw").value
     console.log(usr)
-    console.log(pw)
     document.getElementById("loginpage").style.display = "none"
-    eel.Login(usr, pw)
+    eel.Login(usr)
     document.getElementById("FLASHCARD").style.display = "block"
 }
 
 eel.expose(cardBuilder)
-function cardBuilder(num, title, description, ans) {
+function cardBuilder(num, description, ans) {
     document.getElementById("num").innerHTML = num
-    document.getElementById("title").innerHTML = title
     document.getElementById("desc").innerHTML = description
     curans = ans
 }
@@ -39,25 +36,8 @@ function answer(answer) {
     }
 }
 
-const offCanvas = document.getElementById("offcanvasRight")
-offCanvas.addEventListener("hide.bs.offcanvas", show())
-
-const menu = document.getElementById("menuicon")
-menu.addEventListener("click", hide())
-
-function hide(){
-    document.getElementById("menuicon").style.opacity = 0
-    console.log("hide")
-}
-
-function show(){
-    document.getElementById("menuicon").style.opacity = 1
-    console.log("show")
-}
-
-eel.expose(statUpdate)
-function statUpdate(usr, cor, incor){
-    document.getElementById("offcanvasRightLabel").innerText(usr)
-    document.getElementById("correctnum").innerText(cor)
-    document.getElementById("incorrectnum").innerText(incor)
+eel.expose(stats)
+function stats(cor, incor) {
+    document.getElementById("correctnum").innerHTML = cor
+    document.getElementById("incorrectnum").innerHTML = incor
 }
